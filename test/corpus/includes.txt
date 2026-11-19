@@ -1,0 +1,20 @@
+======
+Basic include
+======
+
+#include "filename.ext"
+
+#include filename.ext
+//include "filename.ext"
+#include"filename.ext"
+#includefilename.ext
+
+---
+
+(source_file
+  (include)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment))

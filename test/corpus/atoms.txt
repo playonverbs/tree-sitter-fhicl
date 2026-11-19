@@ -1,0 +1,70 @@
+=========
+No value
+=========
+
+
+---
+
+(ERROR)
+
+=========
+Comments
+=========
+
+# this is a comment!
+
+a : 2.0 # this is a comment after a value
+b: [ 2 ] // a comment
+
+---
+
+(source_file
+  (comment)
+  (definition
+    (identifier)
+    (number_atom))
+  (comment)
+
+  (definition
+    (identifier)
+    (sequence
+      (number_atom)))
+      (comment))
+
+=========
+Table containing primitives
+=========
+
+a2: {
+  b: 2,
+  c: "hi"
+  d: nil
+  e: 321.2
+  f: "true"
+  g: false
+}
+
+---
+
+(source_file
+  (definition
+    (identifier)
+    (table
+      (definition
+        (identifier)
+        (number_atom))
+      (definition
+        (identifier)
+        (string_atom))
+      (definition
+        (identifier)
+        (nil_atom))
+      (definition
+        (identifier)
+        (number_atom))
+      (definition
+        (identifier)
+        (string_atom))
+      (definition
+        (identifier)
+        (boolean_atom)))))

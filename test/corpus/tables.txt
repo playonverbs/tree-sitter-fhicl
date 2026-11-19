@@ -1,0 +1,66 @@
+=========
+Empty table
+=========
+
+{}
+
+{
+  
+}
+
+---
+
+(source_file
+  (table)
+  (table))
+
+=========
+Single value
+=========
+
+{ a : 3 }
+
+---
+
+(source_file
+  (table
+    (definition
+      (identifier)
+      (number_atom))))
+
+=========
+Multiple values
+=========
+
+{ a: 2, b: 4.2 }
+
+---
+
+(source_file
+  (table
+    (definition
+      (identifier)
+      (number_atom))
+    (definition
+      (identifier)
+      (number_atom))))
+
+=========
+Nested values
+=========
+
+{ a: 2, b: { c: 3 } }
+
+---
+
+(source_file
+  (table
+    (definition
+      (identifier)
+      (number_atom))
+    (definition
+      (identifier)
+      (table
+        (definition
+          (identifier)
+          (number_atom))))))

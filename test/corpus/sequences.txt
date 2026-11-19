@@ -1,0 +1,29 @@
+======
+Empty sequence
+======
+
+a: []
+
+---
+
+(source_file
+  (definition
+    (identifier)
+    (sequence)))
+
+======
+Mixed values
+======
+
+a : [ 1, 3, 4, "d", nil ]
+---
+
+(source_file
+  (definition
+    (identifier)
+    (sequence
+      (number_atom)
+      (number_atom)
+      (number_atom)
+      (string_atom)
+      (nil_atom))))
